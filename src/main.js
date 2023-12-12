@@ -4,7 +4,6 @@ import FormViewPresenter from './presenter/form-presenter.js';
 import PointsListPresenter from './presenter/points-list-presenter.js';
 import EditFormViewPresenter from './presenter/edit-form-presenter.js';
 
-
 const tripEventsNode = document.querySelector('.trip-events');
 const filterNode = document.querySelector('.trip-controls__filters');
 
@@ -22,8 +21,3 @@ for (let i = 0; i < 3; i++) {
   pointListPresenter.initPoint();
 }
 editFormViewPresenter.init();
-
-
-
-
-

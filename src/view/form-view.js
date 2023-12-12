@@ -1,4 +1,4 @@
-import { createElement } from '../render.js'
+import { createElement } from '../render.js';
 
 function createFormTemplate() {
   return `<form class="event event--edit" action="#" method="post">
@@ -160,7 +160,7 @@ function createFormTemplate() {
       </div>
     </section>
   </section>
-</form>`
+</form>`;
 }
 
 export default class FormView {

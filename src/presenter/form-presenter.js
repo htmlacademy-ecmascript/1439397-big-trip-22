@@ -1,5 +1,5 @@
-import FormView from '../view/form.js';
 import { render } from '../render.js';
+import FormView from '../view/form-view.js';
 
 export default class FormViewPresenter {
   formComponent = new FormView();

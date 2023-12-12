@@ -1,6 +1,6 @@
 import { render } from '../render.js';
-import PointListView from '../view/point-list-view.js';
 import PointView from '../view/point-view.js';
+import PointListView from '../view/point-list-view.js';
 
 export default class PointsListPresenter {
   pointsListComponent = new PointListView();
@@ -18,7 +18,11 @@ export default class PointsListPresenter {
   }
 
   initPoint() {
-    render(this.getPointComponent(), this.pointsListContainer.lastElementChild);
+    render(this.getPointComponent(), this.pointsListComponent.getElement());
+  }
+
+  getPointListElement() {
+    return this.pointsListComponent;
   }
 }
 

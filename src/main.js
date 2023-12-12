@@ -12,16 +12,16 @@ const sortPresenter = new SortPresenter({ sortContainer: tripEventsNode });
 const formPresenter = new FormViewPresenter({ formContainer: tripEventsNode });
 const filterPresenter = new FilterPresenter({ filterContainer: filterNode });
 const pointListPresenter = new PointsListPresenter({ pointsListContainer: tripEventsNode });
-const editFormViewPresenter = new EditFormViewPresenter({ editFormContainer: tripEventsNode })
+const editFormViewPresenter = new EditFormViewPresenter({ editFormContainer: tripEventsNode });
 
 filterPresenter.init();
 sortPresenter.init();
 formPresenter.init();
-editFormViewPresenter.init();
 pointListPresenter.initPointList();
 for (let i = 0; i < 3; i++) {
   pointListPresenter.initPoint();
 }
+editFormViewPresenter.init();
 
 
 

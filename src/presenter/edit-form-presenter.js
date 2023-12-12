@@ -1,6 +1,5 @@
 import EditFormView from '../view/edit-form-view.js';
-import RenderPosition from '../render.js';
-import { render } from '../render.js';
+import { render, RenderPosition } from '../render.js';
 
 export default class EditFormViewPresenter {
   editFormComponent = new EditFormView();
@@ -10,6 +9,7 @@ export default class EditFormViewPresenter {
   }
 
   init() {
-    render(this.editFormComponent, this.editFormContainer.lastElementChild);
+    render(this.editFormComponent, this.editFormContainer.lastElementChild, RenderPosition.AFTERBEGIN);
+    console.log(this.editFormContainer.lastElementChild);
   }
 }
